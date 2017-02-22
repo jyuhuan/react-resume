@@ -1,0 +1,17 @@
+{
+  "name": "react-resume",
+  "version": "1.0.0",
+  "description": "Just a simple resume template made with React",
+  "scripts": {},
+  "author": "Yuhuan Jiang",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "webpack": "^2.2.1"
+  }
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,600');
+
+body {
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, sans-serif;;
+  font-weight: 300;
+  color: #777;
+}
+
+/* BASIC COMPONENTS */
+.hbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.vbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.expandable-box-item {
+  flex-grow: 1000;
+}
+
+.app-form {
+  background: #F5F5F5;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+/* GENERAL COMPONENTS */
+.story {
+  display: block;
+  background: yellow;
+  padding: 20px;
+}
+
+.story > .head {
+  background: blue;
+  line-height: 50px;
+  height: 50px;
+}
+
+/* RESUME */
+
+.resume {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.side-info {
+  padding: 25px;
+  height: 100%;
+  width: 200px;
+  min-width: 200px;
+  overflow: auto;
+}
+
+.main-info {
+  padding: 25px;
+  height: 100%;
+  width: 750px;
+  overflow: auto;
+}
+
+
+.project-box {
+  outline: 1px solid black;
+}
+
+.tag-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tag-list > .tag {
+    display: inline-block;
+    font-size: 0.8em;
+    border-radius: 3px;
+    padding: 0 4px 0 4px;
+    color: #888;
+    border-color: #DDD;
+    border-width: 1px;
+    border-style: solid;
+    white-space: nowrap;
+}
