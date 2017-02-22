@@ -3,12 +3,12 @@ import React from "react"
 import { HBox, VBox, ExpandableBoxItem } from "../core/Box"
 
 export function SideInfo(props) {
-  return <VBox><VBox className="side-info">{props.children}</VBox></VBox>
+  return <div className="side-column"><VBox className="side-info">{props.children}</VBox></div>
 }
 
 
 export function MainInfo(props) {
-  return <VBox><VBox className="main-info">{props.children}</VBox></VBox>
+  return <div className="main-column"><VBox className="main-info">{props.children}</VBox></div>
 }
 
 /*

@@ -1,11 +1,9 @@
 const React = require("react")
 
 export function ExpandableBoxItem(props) {
-  return (
-    <div className="expandable-box-item">
-      {props.children}
-    </div>
-  )
+  let className = "expandable-box-item"
+  if (props.className) className += " " + props.className
+  return <div className={className}>{props.children}</div>
 }
 
 export function HBox(props) {

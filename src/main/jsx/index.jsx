@@ -6,7 +6,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppForm } from "./core/AppForm"
 import {TagList, Tag} from "./resume/Gadgets"
-import { Resume } from "./resume/Resume"
+import { Resume, Section, Document } from "./resume/Resume"
 
 import { SideInfo, MainInfo } from "./resume/Skeleton"
 
@@ -14,47 +14,30 @@ import { Story } from "./resume/Story"
 
 ReactDOM.render(
   (
-    <AppForm>
       <Resume>
         <SideInfo>
+          <Section icon="material.school" title="Education" >child</Section>
           <span>side info 1</span>
           <span>side info 2</span>
           <span>side info 3</span>
         </SideInfo>
         <MainInfo>
-          <Story title="Story Title" date="Spring 2014">
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story 
-          </Story>
-          <Story title="Story Title" date="Spring 2014">
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story 
-          </Story>
-          <Story title="Story Title" date="Spring 2014">
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story <br/>
-            This is a story 
-          </Story>
+          <Document>
+            <Section icon="material.school" title="Education" >
+              <Story title="University of Pittsburgh" date="Aug. 2014 – Dec. 2017 (expected)"></Story>
+            </Section>
+            <Section icon="material.school" title="Education" >
+              <Story title="University of Pittsburgh" date="Aug. 2014 – Dec. 2017 (expected)"></Story>
+            </Section>
+            <Section icon="material.school" title="Education" >
+              <Story title="University of Pittsburgh" date="Aug. 2014 – Dec. 2017 (expected)"></Story>
+            </Section>
+            <Section icon="material.school" title="Education" >
+              <Story title="University of Pittsburgh" date="Aug. 2014 – Dec. 2017 (expected)"></Story>
+            </Section>
+          </Document>
         </MainInfo>
       </Resume>
-    </AppForm>
   ), 
   document.getElementById('root')
 );
