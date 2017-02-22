@@ -1,4 +1,7 @@
 # React Resume
+
+> 🚧 __Active Development in Progress__
+
 A resume made out of React. See a live demo at [#](#).
 
 ## Usage
