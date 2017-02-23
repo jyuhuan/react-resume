@@ -1,10 +1,18 @@
-const React = require("react")
+import React from "react"
 
-export function Project({name, time, tags, achievements}) {
+import { Story } from "./Story"
+import { TagList } from "./Gadgets"
+
+
+export function Project({title, duration, tags, achievements}) {
   return (
-    <div className="project-box">
-      <div>{name}</div>
+    <Story className="project" title={title} subtitle={duration}>
       <TagList tags={tags} />
-    </div>
+      <ul>
+        {achievements.map(a => 
+          <li>{a}</li>
+        )}
+      </ul>
+    </Story>
   )
 }

@@ -1,4 +1,4 @@
-const React = require("react")
+import React from "react"
 
 export function Tag({tag}) {
   return <div className="tag">{tag}</div>

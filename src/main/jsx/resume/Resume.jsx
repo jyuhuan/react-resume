@@ -21,10 +21,10 @@ export function Section(props) {
 
   return (
     <div style={{display: "flex", flexDirection: "column"}} className="section">
-      <div className="head">
+      <HBox className="head">
         <div className="icon">{icon}</div>
         <ExpandableBoxItem className="text">{props.title}</ExpandableBoxItem>
-      </div>
+      </HBox>
       <div className="body">{props.children} </div>     
     </div>
   )

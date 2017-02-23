@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 body {
   margin: 0;
@@ -13,12 +13,6 @@ body {
   flex-direction: row;
 }
 
-.app-form {
-  background: #F5F5F5;
-  height: 100vh;
-  width: 100vw;
-  align-content: center;
-}
 
 .vbox {
   display: flex;
@@ -38,10 +32,10 @@ body {
   overflow: auto;
 }
 
-/*.expandable-box-item {
+.expandable-box-item {
   flex-grow: 1000;
 }
-*/
+
 
 
 /* GENERAL COMPONENTS */
@@ -57,20 +51,58 @@ body {
 }
 
 .side-info {
-  padding: 25px;
   font-size: 0.9em;
+}
+
+.link-bar {
+  width: 100%;
+  font-size: 1.1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0 0px 0;
+}
+
+.link-bar a {
+  color: white;
 }
 
 .main-info {
   padding: 25px;
 }
 
-/*.document {
+.profile {
+  align-items: center;
+  padding: 30px;
+}
+
+.profile > .name-box {
+  font-weight: 400;
+  align-items: center;
+  padding: 20px 0 10px 0;
+}
+
+.profile > .name-box > .name {
+  font-size: 1.3em;
+}
+
+.profile > .name-box > .other-name {
+  font-size: 1.1em;
+}
+
+.profile > .bio {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+
+.document {
   padding: 20px 0 0 0 ;
 }
 
 .section {
-  outline: 5px solid red;
+  /*outline: 1px solid blue;*/
   padding: 10px;
 }
 
@@ -82,10 +114,50 @@ body {
 
 .section > .head > .text {
   margin-left: 10px;
-}*/
+}
+
+.story {
+  /*outline: 1px solid orange;*/
+  padding: 5px 0 10px 0;
+}
+
+.story > .head {
+  padding: 5px 0 0 0;
+}
+
+.story > .head > .title {
+  font-weight: 400;
+}
+
+.story > .body {
+  padding: 5px 0 0 0;
+  line-height: 1.5em;
+}
 
 
-/*.tag-list {
+
+
+
+
+.education .comment {
+  margin: 5px 0 0 0;
+  display: inline-block;
+  font-size: 0.8em;
+  border-radius: 3px;
+  padding: 0 4px 0 4px;
+  border-width: 1px;
+  border-style: solid;
+  white-space: nowrap;
+  line-height: 1.2em;
+}
+
+.experience .employer {
+  font-size: 0.8em;
+  margin-top: -5px;
+}
+
+
+.tag-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -101,7 +173,13 @@ body {
     border-width: 1px;
     border-style: solid;
     white-space: nowrap;
-}*/
+    line-height: 1.2em;
+    margin: 0 3px 0 0;
+}
+
+ul {
+    padding: 0 0 0 23px;
+}
 
 
 @media screen and (max-width:500px) {
